@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+/*
+   ===============================================================================================
+        RESET 
+   ===============================================================================================
+ */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+   ===============================================================================================
+    UTILITY CLASS
+   ===============================================================================================
+ */
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0rem auto;
+  /* border: 1px solid red; */
+}
+section {
+  margin-top: 5rem !important;
+}
+h2:hover,
+h1:hover {
+  text-decoration: 0.1rem solid underline;
+}
+.headingHR {
+  align-items: center;
+}
+
+.load{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.primary button{
+  padding: 1rem 2.2rem;
+  color: black;
+  font-weight: 400;
+  border: 2px solid;
+  text-align: center;
+}
+.primary button:hover{
+  background-color: #0d0d0d;
+  color: white;
+}
+.secondary button{
+  background-color: #0d0d0d;
+  color: white;
+  padding: 1rem 2.2rem;
+  font-weight: 600;
+  border: 2px solid white;
+}
+.secondary button:hover{
+  color: black;
+  background-color: aliceblue;
+  text-align: center;
+}
+/*
+   ================================================================================================
+     HEADER
+   ================================================================================================
+      */
+.whole{
+  max-width: 100%;
+  border: 1px solid ;
+}
+
+.headingSearch img {
+  height: 1.1rem;
+}
+
+.headingImage img {
+  height: 1.3rem;
+}
+
+.mainHeader {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: yellow;
+  font-family: "Poppins", sans-serif;
+}
+
+.headingSearch {
+  background-color: #fff;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  margin: 0.4rem 0.5rem;
+}
+
+.headingSearch input {
+  border: 0px;
+  outline: 0px;
+  font-size: medium;
+}
+
+.headingSearch form input::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.headingSigns a:link,
+.headingSigns a:visited {
+  text-decoration-line: none;
+  margin-right: 1rem;
+  font-size: smaller;
+  color: black;
+}
+
+/*
+   ================================================================================================
+       NAVBAR
+   ================================================================================================
+ */
+
+.Navbar {
+  background-color: black;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 0rem;
+  font-size: 0.9rem;
+  /* font-weight: 600; */
+  font-family: "poppins", sans-serif;
+}
+.Navbar > * {
+  padding: 0rem 1.7rem;
+}
+.Navbar .line {
+  border-right: 2px solid wheat;
+}
+
+.social {
+  justify-content: space-between;
+  width: 16rem;
+  /* border: 1px solid white; */
+}
+.social .icon {
+  color: aliceblue;
+}
+.replace{
+  display: none;
+}
+
+/*
+   ==============================================================================================
+     MAIN-HEADING, SECTION-1
+   ==============================================================================================
+ */
+
+.geniusAug {
+  justify-content: space-between;
+  align-items: start;
+}
+.augContent {
+  width: 40%;
+  font-family: "Roboto", sans-serif;
+}
+.augContent h1 {
+  font-family: "poppins", sans-serif;
+  font-size: xx-large;
+}
+
+.augContent p {
+  font-size: large;
+}
+.doneBy > :first-child {
+  font-size: small;
+  font-weight: 600;
+}
+.doneBy > :last-child {
+  font-size: small;
+  font-weight: 100;
+  color: rgb(95, 93, 93);
+}
+.doneBy2 > :first-child {
+  font-size: small;
+  font-weight: 600;
+}
+.doneBy2 > :last-child {
+  font-size: x-small;
+  font-weight: 0;
+  color: aliceblue;
+}
+.augImageContainer {
+  width: 55%;
+  background-image: url("./assets/genius.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 23rem;
+}
+
+/*
+   ==============================================================================================
+      ARTICLES SECTION-2
+   ==============================================================================================
+ */
+
+article {
+  width: 24%;
+  height: 100%;
+  position: relative;
+}
+.subart{
+  justify-content: space-between;
+}
+
+article::before{
+  content: '';
+  height:100%;
+  width: 3px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+.lastcol::before{
+  width: 0;
+}
+
+.subart1 {
+  /* padding-right: 0.5rem; */
+  flex-direction: column;
+}
+
+.subArticle {
+  margin-top: 10rem;
+}
+.subArticle2 {
+  margin-top: 0rem;
+}
+/* .subSpecial {
+  margin-top: 12rem;
+} */
+.subpic1{
+  height: 9.5rem;
+  width: 88%;
+  margin-top: 1rem;
+}
+.subpic3 {
+  height: 9rem;
+  width: 88%;
+  margin-top: 1rem;
+}
+.subpic2 {
+  height: 9.5rem;
+  width: 88%;
+  margin-top: 1rem;
+}
+.subart2 h2{
+  margin-bottom: 3rem;
+}
+.subpic4 {
+  height: 9.5rem;
+  width: 88%;
+  margin-top: 0.8rem;
+}
+
+.subpic1 {
+  background-image: url("./assets/subpic1.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic2 {
+  background-image: url("./assets/subpic2.gif");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic3 {
+  background-image: url("./assets/subpic3.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic4{
+  background-image: url("./assets/subpic4.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+/*
+   ==============================================================================================
+      CHARTS SECTION-3
+   ==============================================================================================
+ */
+/* .listContent *{
+  outline: 1px solid red;
+} */
+.chartHeading {
+  justify-content: space-between;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+}
+.chartHeading h1 {
+  font-size: 5rem;
+}
+
+.options {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid;
+  padding: 1rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.list1 {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 2px solid rgb(192, 189, 184);
+  gap: 3rem;
+}
+.list1:hover{
+  background-color: rgb(225, 225, 225);
+}
+
+.songName > :first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+.songName > :last-child {
+  font-size: small;
+  margin-top: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+.con1 span {
+  font-size: x-large;
+}
+.con1 {
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 20%;
+}
+.songName {
+  justify-content: start;
+  width: 45%;
+  gap: 1rem;
+}
+.songName > span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con2 {
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  width: 30%;
+  white-space: nowrap;
+}
+.con2 > span {
+  font-size: x-large;
+  font-weight: 0;
+}
+.con3 {
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 20%;
+}
+.nofire{
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+.fire {
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.view {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.listPic1 {
+  background-image: url("./assets/genius.jpg");
+  height: 3.5rem;
+  width: 3.5rem;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.listPic2 {
+  background-image: url("./assets/subpic1.png");
+  height: 3.5rem;
+  width: 3.5rem;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.listPic7{
+  background-image: url("./assets/songwedidnt.jpg");
+  height: 3.5rem;
+  width: 3.5rem;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+/*
+   ==============================================================================================
+      videosSection SECTION-4
+   ==============================================================================================
+ */
+/* .videoImg *{
+  outline: 3px solid rgb(12, 168, 246);
+} */
+ .videosSection{
+  background-color:black;
+  color: aliceblue;
+  width: 100%;
+  padding: 2rem 0rem;
+  padding-bottom: 4rem;
+ }
+ .Headings{
+  margin: 4rem 0rem;
+  /* border: 1px solid white; */
+ }
+ .bigHeading{
+  font-size: 6rem;
+  text-align: center;
+  font-weight:bold;
+  letter-spacing: 0.5rem;
+  font-family: 'poppins',sans-serif;
+ }
+ .smallHeading{
+  font-size: medium;
+  text-align: center;
+  font-weight: 500;
+  color: gold;
+  letter-spacing: 0.2rem;
+  font-family: 'poppins',sans-serif;
+ }
+.videoImg{
+  height: 28rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+
+.videoPlay{
+  background-image: url("./assets/video.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 70%;
+  position: relative;
+}
+.videoContent{
+  width: 26%;
+  height: 100%;
+  border-top: aliceblue;
+  border-top: 3px solid white;
+  color: aliceblue;
+}
+.videoContent h1{
+  font-size: 2rem;
+  font-family: 'poppins',sans-serif;
+
+}
+.videoContent > span{
+  font-size: 1.5rem;
+}
+.videoContent p,span,.doneBy2{
+  font-family: 'roboto',sans-serif;
+}
+.playButton{
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+}
+.fa-solid{
+  background-color: #fff;
+  padding: 0.8rem 1rem;
+}
+
+
+/* ==========================================================
+          
+             LATESTsection  SECTION-4
+          
+=============================================================*/
+
+
+.latestGrid{
+  display: grid;
+  grid-template-columns: repeat(4,23%);
+  /* outline: 1px solid red; */
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+
+.sider1::after {
+  content: "";
+  margin-left: 0.5rem;
+  height: 2px;
+  background-color: black;
+  flex-grow: 1;
+}
+
+.sider1 {
+  align-items: center;
+}
+
+.latestGrid .subpic1{
+  margin: 0.5rem auto;
+  width: 100%;
+}
+
+.subpic1 {
+  background-image: url("./assets/latest1.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic2 {
+  background-image: url("./assets/latest2.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic3 {
+  background-image: url("./assets/latest3.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic4 {
+  background-image: url("./assets/latest4.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic5 {
+  background-image: url("./assets/latest5.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic6 {
+  background-image: url("./assets/latest6.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic7 {
+  background-image: url("./assets/latest7.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic8 {
+  background-image: url("./assets/latest8.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic9 {
+  background-image: url("./assets/latest9.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic10 {
+  background-image: url("./assets/latest10.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic11 {
+  background-image: url("./assets/latest11.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+.subpic12 {
+  background-image: url("./assets/latest12.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
+
+
+/* ================================================================================================================
+
+                   FOOTERsection SECTION - 5
+
+====================================================================================================================*/
+
+
+.footersider{
+  background-color: black;
+  /* height: 20rem; */
+  width: 100%;
+}
+
+.footerMain{
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  color: aliceblue;
+  width: 100%;
+}
+/* 
+.footerMain > *{
+  outline: 1px solid aliceblue;
+} */
+.footerSocial{
+  width: 40%;
+
+}
+.footerSocial h1{
+  font-size: xx-large;
+  text-decoration: none;
+  line-height: 1.5;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+}
+.about{
+  width: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about div{
+  font-family: 'poppins',sans-serif;
+  font-weight: 200;
+  font-size: large;
+  margin-bottom: 1rem;
+}
+
+.terms{
+  width: 40%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.terms div{
+  font-family: 'poppins',sans-serif;
+  font-weight: 200;
+  font-size: large;
+  margin-bottom: 1rem;
+}
+.footerIcons{
+  width: 14rem;
+  font-size:2rem;
+  flex-wrap:nowrap;
+  gap: 1rem;
+  /* display: inline; */
+}
+
+.footerAdd{
+  color: aliceblue;
+  padding-block: 3rem;
+  
+}
+
+.verified{
+  justify-content: start;
+  gap: 2rem;
+  font-family: 'poppins',sans-serif;
+  font-size: 0.9rem;
+  word-spacing: 0.3rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.hotSongs{
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: 'poppins',sans-serif;
+  font-size: 0.9rem;
+  align-items: center;
+
+}
+
+.split{
+  width: 55%;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  gap: 1rem;
+}
+/* .split >*{
+  outline: 1px solid wheat;
+} */
